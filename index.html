@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -18,11 +21,11 @@
             </div>
             <div class="head-card bg-[#F1F2F4] p-3 rounded-[9px]">
                 <p class="text-[#323B49] text-[14px] ">Interview</p>
-                <p class="text-[#10B981] text-[18px] font-bold">0</p>
+                <p class="text-[#10B981] text-[18px] font-bold" id="interview-crd">0</p>
             </div>
             <div class="head-card bg-[#F1F2F4] p-3 rounded-[9px]">
                 <p class="text-[#323B49] text-[14px] ">Rejected</p>
-                <p class="text-[#EF4444] text-[18px] font-bold">0</p>
+                <p class="text-[#EF4444] text-[18px] font-bold" id="rejected-crd">0</p>
             </div>
         </div>
     </header>
@@ -38,9 +41,12 @@
             </div>
 
             <div class="flex gap-3 text-[12px] mb-4">
-                <button class="bg-[#2563EB] text-white px-3 py-1 rounded-md">All</button>
-                <button class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md">Interview</button>
-                <button class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md">Rejected</button>
+                <a href="index.html"
+                    class="bg-[#2563EB] text-white px-3 py-1 rounded-md inline-block text-[12px]">All</a>
+                <a href="interview.html"
+                    class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md inline-block text-[12px]">Interview</a>
+                <a href="reject.html"
+                    class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md inline-block text-[12px]">Rejected</a>
             </div>
 
             <!--cards -->
@@ -55,7 +61,8 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded"
+                        id="apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -63,10 +70,12 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]"
+                            id="interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]"
+                            id="reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -82,17 +91,17 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded" id="apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
                         Design modern interfaces for high-profile clients. Must have portfolio and strong design sense.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]" id="interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]" id="reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -108,7 +117,7 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded" id="apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -116,10 +125,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]" id="interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]" id="reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -135,7 +144,7 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded" id="apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -143,10 +152,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]" id="interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]" id="reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -160,9 +169,9 @@
                             <p class="text-[12px] text-gray-500">Senior React Developer</p>
                             <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
                         </div>
-                            <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded" id="apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -170,10 +179,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]" id="interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]" id="reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -189,7 +198,7 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -197,10 +206,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px] interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px] reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -216,7 +225,7 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -224,10 +233,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px] interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px] reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -243,7 +252,7 @@
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded apply-btn">
                         NOT APPLIED
                     </span>
                     <p class="text-[12px] text-gray-500 mt-2">
@@ -251,10 +260,10 @@
                         worldwide.
                     </p>
                     <div class="flex gap-2 mt-3">
-                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px] interview-btn">
                             INTERVIEW
                         </button>
-                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px] reject-btn">
                             REJECTED
                         </button>
                     </div>
@@ -264,6 +273,32 @@
 
         </main>
     </main>
+    <script>
+        let applyBtn = document.getElementsByClassName('apply-btn');
+        let interviewBtn = document.getElementsByClassName('interview-btn');
+        let rejectBtn = document.getElementsByClassName('reject-btn');
+        let interviewCrd = document.getElementById('interview-crd');
+        let rejectedCrd = document.getElementById('rejected-crd');
+
+        let Icnt = 0;
+        let Rcnt = 0;
+
+        interviewBtn.addEventListener('click', function () {
+            applyBtn.innerText = 'INTERVIEW';
+            applyBtn.style.backgroundColor = '#D1FAE5';
+
+            Icnt++; 
+            interviewCrd.innerText = Icnt; 
+        })
+
+        rejectBtn.addEventListener('click', function () {
+            applyBtn.innerText = 'REJECTED';
+            applyBtn.style.backgroundColor = '#FECACA';
+
+            Rcnt++; 
+            rejectedCrd.innerText = Rcnt;
+        })
+    </script>
 </body>
 
 </html>
