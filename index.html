@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
+
 <body>
-    hi sajid
+    <header class="w-[80%] mx-auto">
+        <h1 class="text-3xl text-[#002C5C] font-bold mt-10">Job Application Tracker</h1>
+        <div class="header-cards grid grid-cols-3 gap-4 mt-4">
+            <div class="head-card bg-[#F1F2F4] p-3 rounded-[9px]">
+                <p class="text-[#323B49] text-[14px] ">Total</p>
+                <p class="text-[#002C5C] text-[18px] font-bold">8</p>
+            </div>
+            <div class="head-card bg-[#F1F2F4] p-3 rounded-[9px]">
+                <p class="text-[#323B49] text-[14px] ">Interview</p>
+                <p class="text-[#10B981] text-[18px] font-bold">0</p>
+            </div>
+            <div class="head-card bg-[#F1F2F4] p-3 rounded-[9px]">
+                <p class="text-[#323B49] text-[14px] ">Rejected</p>
+                <p class="text-[#EF4444] text-[18px] font-bold">0</p>
+            </div>
+        </div>
+    </header>
+    <hr class="w-[80%] mx-auto mt-5 text-[#E6E7E9]">
+
+    <main>
+        <main class="w-[80%] mx-auto mt-6">
+
+            <!-- main section header -->
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="text-[15px] font-semibold text-[#002C5C]">Available Jobs</h2>
+                <p class="text-[12px] text-gray-400 font-bold">8 jobs</p>
+            </div>
+
+            <div class="flex gap-3 text-[12px] mb-4">
+                <button class="bg-[#2563EB] text-white px-3 py-1 rounded-md">All</button>
+                <button class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md">Interview</button>
+                <button class="bg-[#F1F2F4] text-[#323B49] px-3 py-1 rounded-md">Rejected</button>
+            </div>
+
+            <!--cards -->
+            <div class="space-y-6">
+                <!--card1-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">WebFlow Agency</h3>
+                            <p class="text-[12px] text-gray-500">UI/UX Designer</p>
+                            <p class="text-[11px] text-gray-400">Onsite · Part-time · $40,000 - $60,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Design modern interfaces for high-profile clients. Must have portfolio and strong design sense.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card3-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card4-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card5-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card6-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card7-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+                <!--card8-->
+                <div class="bg-[#FFFFFF] shadow-sm rounded-xl p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-[14px] font-semibold text-[#002C5C]">Mobile First Corp</h3>
+                            <p class="text-[12px] text-gray-500">Senior React Developer</p>
+                            <p class="text-[11px] text-gray-400">Remote · Full-time · $60,000 - $80,000</p>
+                        </div>
+                        <button class="text-gray-400">⋮</button>
+                    </div>
+                    <span class="inline-block mt-2 text-[10px] bg-[#EEF4FF] text-[#323B49] px-2 py-[5px] rounded">
+                        NOT APPLIED
+                    </span>
+                    <p class="text-[12px] text-gray-500 mt-2">
+                        Build scalable applications using React Native. Work on product roadmaps and millions of users
+                        worldwide.
+                    </p>
+                    <div class="flex gap-2 mt-3">
+                        <button class="border border-[#10B981] text-[#10B981] text-[11px] px-3 py-1 rounded-[5px]">
+                            INTERVIEW
+                        </button>
+                        <button class="border border-[#EF4444] text-[#EF4444] text-[11px] px-3 py-1 rounded-[5px]">
+                            REJECTED
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </main>
 </body>
+
 </html>
